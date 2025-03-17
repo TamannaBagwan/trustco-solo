@@ -79,33 +79,48 @@ body {
   font-size: 20px;
   font-weight: 550;
 }
-
 @media (max-width: 768px) {
-  .get-started-button {
-    width: 45%;
-    height: 65px;
-    font-size: 20px;
-    margin: auto;
-  }
-  .hero-section {
-    flex-direction: column;
-    padding: 40px 10px;
-  }
-
-  .actions {
-    flex-direction: column;
-    align-items: center;
-  }
-  .check-video-box {
-    margin: 30px 10px 100px 10px;
-  }
-
-  .content p {
-    margin: 25px;
-  }
-  .content h1 {
-    text-align: center;
-    font-size: 36px;
-    padding: 10px;
-  }
+    .hero-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 10px;
+    }
+    .check-video-box {
+        margin-bottom: 50px;
+    }
+    .content {
+      order: 0; 
+    }
+  
+    .left-icons,
+    .right-icons {
+      order: 1; 
+      display: flex; 
+   
+      flex-direction: row;
+     
+    }
+  
+    .actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .content p {
+      margin: 25px;
+    }
+  
+    .content h1 {
+      text-align: center;
+      font-size: 36px;
+      padding: 10px;
+    }
+  
+    .get-started-button {
+      width: 45%;
+      height: 80px;
+      font-size: 20px;
+      margin: 10px 10px 30px 10px;
+    }
 }
