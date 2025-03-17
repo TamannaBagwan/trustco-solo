@@ -124,3 +124,29 @@ body {
       margin: 10px 10px 30px 10px;
     }
 }
+
+.brand-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 150px;
+}
+
+.brand-text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+
+}
+.brand-logos img {
+    color: red;
+}
+
