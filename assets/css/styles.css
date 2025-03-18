@@ -8,11 +8,10 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-align: center;
-  padding: 100px 120px;
+  padding: 100px 0px;
   background-color: #f2f5f6;
-  position: relative;
 }
 
 .left-icons,
@@ -23,7 +22,7 @@ body {
 
 .content {
   text-align: center;
-  max-width: 700px;
+  max-width: 780px;
 }
 
 .content h1 {
@@ -63,7 +62,6 @@ body {
   border-radius: 55px;
   height: 55px;
   width: 165px;
-  padding: 15px 30px;
   cursor: pointer;
   margin-right: 40px;
 }
@@ -79,74 +77,92 @@ body {
   font-size: 20px;
   font-weight: 550;
 }
-@media (max-width: 768px) {
-    .hero-section {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 40px 10px;
-    }
-    .check-video-box {
-        margin-bottom: 50px;
-    }
-    .content {
-      order: 0; 
-    }
-  
-    .left-icons,
-    .right-icons {
-      order: 1; 
-      display: flex; 
-   
-      flex-direction: row;
-     
-    }
-  
-    .actions {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .content p {
-      margin: 25px;
-    }
-  
-    .content h1 {
-      text-align: center;
-      font-size: 36px;
-      padding: 10px;
-    }
-  
-    .get-started-button {
-      width: 45%;
-      height: 80px;
-      font-size: 20px;
-      margin: 10px 10px 30px 10px;
-    }
-}
 
 .brand-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 100px;
 }
 
 .brand-text {
-    color: #333;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.brand-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px; 
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10px;
+  }
+  .check-video-box {
+    margin-bottom: 50px;
+  }
+  .content {
+    order: 0;
+  }
+
+  .left-icons,
+  .right-icons {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content p {
+    margin: 25px;
+  }
+
+  .content h1 {
+    text-align: center;
+    font-size: 36px;
+    padding: 10px;
+  }
+
+  .get-started-button {
+    width: 45%;
+    height: 80px;
+    font-size: 20px;
+    margin: 10px 10px 30px 10px;
+  }
+
+  .brand-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .brand-text {
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.brand-logos {
+    margin: 20px;
+    padding: 40px;
+  }
+  
+  .brand-logos {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 64px;
-
-}
-.brand-logos img {
-    color: red;
+    justify-content: center;
+    gap: 25px; 
+    padding: 10px 40px;
+  }
 }
 
