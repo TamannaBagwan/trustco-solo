@@ -336,7 +336,7 @@ body {
   font-weight: 400;
   color: rgba(64, 64, 64, 1);
 }
-
+/* benefits section ends */
 
 
 
@@ -443,6 +443,30 @@ body {
     width: 40px;
     height: 40px;
   }
- 
+ /* benefits section */
+ .benefits-section{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .benefits-text{
+  width: 330px;
+  text-align: center;
+
+ }
+ .benefits-text h1{
+  font-size: 30px;
+ }
+ .benefits-text p{
+  font-size: 14px;
+ }
+ .benefits-cards{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .badge{
+  margin: auto;
+ }
 
 }
