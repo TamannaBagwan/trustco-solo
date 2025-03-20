@@ -423,7 +423,6 @@ body {
 .meet-founder{
   display: flex;
   justify-content: space-between;
-  gap: 64px;
   padding: 100px 0px 100px 150px;
 }
 .founder-title {
@@ -437,7 +436,7 @@ body {
   font-size: 22px;
   line-height: 32px;
 }
-.founder-title button{
+.founder-btn button{
   margin-top: 60px;
   height: 64px;
   width: auto;
@@ -649,5 +648,35 @@ body {
 }
 .number-box p{
   font-size: 16px;
+}
+.meet-founder{
+  flex-direction: column;
+  padding: 0px;
+  align-items: center;
+
+}
+.founder-title {
+  width: 320px;
+  text-align: center;
+}
+.founder-title h1{
+  font-size: 30px;
+  margin:0px;
+}
+.founder-title p{
+  font-size: 16px;
+  color: rgba(18, 20, 29, 1);
+  line-height: 24px;
+}
+
+.founder-btn button{
+  height: 65px;
+  font-size: 14px;
+  gap: 5px;
+  width: 330px;
+  margin: 50px 10px 30px 0px;
+}
+.founder-img img{
+  height: 378px;
 }
 }
