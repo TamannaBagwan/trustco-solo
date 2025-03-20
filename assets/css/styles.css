@@ -395,13 +395,18 @@ margin-top: 20px;
 /* numbers-section */
 
 .numbers {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   gap: 50px;
   text-align: center;
   padding: 100px 150px;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
 }
 
+.number-box {
+  min-width: 200px; 
+}
 .number-box h2 {
   font-size: 60px;
   margin: 0;
@@ -592,4 +597,25 @@ margin-top: 20px;
   margin-top: 20px;
   height: 368px;
  }
+ .numbers {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  justify-content: center;
+  gap: 16px;
+  padding: 50px 20px;
+  
+}
+.number-box {
+  width: auto; 
+  height: 100px;
+  gap: 8px;
+
+}
+.number-box h2 {
+  font-size: 36px;
+}
+.number-box p{
+  font-size: 16px;
+}
 }
